@@ -1,0 +1,15 @@
+/* styles.css */
+.login-form, .register-form, .order-form, .order-table {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px
+  }  

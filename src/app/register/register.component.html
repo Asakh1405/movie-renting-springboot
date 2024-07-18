@@ -1,0 +1,47 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h2>Register</h2>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input [(ngModel)]="users.fullName" id="fullName" class="form-control" placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input [(ngModel)]="users.age" id="age" class="form-control" placeholder="Age" type="number">
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input [(ngModel)]="users.username" id="username" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input [(ngModel)]="users.password" id="password" class="form-control" placeholder="Password" type="password">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input [(ngModel)]="users.address" id="address" class="form-control" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input [(ngModel)]="users.email" id="email" class="form-control" placeholder="Email" type="email">
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input [(ngModel)]="users.phoneNumber" id="phoneNumber" class="form-control" placeholder="Phone Number">
+              </div>
+              <button (click)="register()" class="btn btn-primary btn-block">Register</button>
+              <p *ngIf="successMessage" class="text-success mt-2">{{ successMessage }}</p>
+              <p *ngIf="errorMessage" class="text-danger mt-2">{{ errorMessage }}</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
